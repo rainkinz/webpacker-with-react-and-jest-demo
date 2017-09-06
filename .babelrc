@@ -13,6 +13,15 @@
     ],
     "react"
   ],
+  "env": {
+    "test": {
+      "presets": [
+        "es2015"
+      ],
+      "plugins": [
+      ]
+    }
+  },
   "plugins": [
     "syntax-dynamic-import",
     "transform-object-rest-spread",

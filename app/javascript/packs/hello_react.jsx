@@ -7,7 +7,7 @@ import ReactDOM from 'react-dom'
 import PropTypes from 'prop-types'
 
 const Hello = props => (
-  <div>Hello {props.name} as {props.time}!</div>
+  <div>Hello {props.name}!</div>
 )
 
 Hello.defaultProps = {
@@ -18,11 +18,13 @@ Hello.propTypes = {
   name: PropTypes.string
 }
 
-// document.addEventListener('DOMContentLoaded', () => {
-document.addEventListener('turbolinks:load', () => {
-  console.log("rendering react")
-  ReactDOM.render(
-    <Hello name="Brendan" time={new Date().toString()} />,
-    document.body.appendChild(document.createElement('div')),
-  )
-})
+export default Hello;
+
+// // document.addEventListener('DOMContentLoaded', () => {
+// document.addEventListener('turbolinks:load', () => {
+//   console.log("rendering react")
+//   ReactDOM.render(
+//     <Hello name="Brendan" time={new Date().toString()} />,
+//     document.body.appendChild(document.createElement('div')),
+//   )
+// })
