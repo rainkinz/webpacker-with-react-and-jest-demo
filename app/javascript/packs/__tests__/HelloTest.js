@@ -1,17 +1,13 @@
 import React from 'react';
-// import Hello from '../hello_react.jsx';
+import Hello from '../Hello'
 import { shallow } from 'enzyme';
 import renderer from 'react-test-renderer';
 
-test('CheckboxWithLabel changes the text after click', () => {
-  // Render a checkbox with label in the document
-  const checkbox = shallow(
-    <CheckboxWithLabel labelOn="On" labelOff="Off" />
+test('hello component', () => {
+  // Render a hello with label in the document
+  const hello = shallow(
+    <Hello name="brendan" time="2000 Aug 10" />
   );
 
-  expect(checkbox.text()).toEqual('Off');
-
-  checkbox.find('input').simulate('change');
-
-  expect(checkbox.text()).toEqual('On');
+  expect(hello.text()).toEqual('Hello brendan!');
 });
