@@ -22,7 +22,7 @@
     "webpack-dev-server": "^2.7.1"
   },
   "jest": {
-    "testPathDirs": [
+    "roots": [
       "<rootDir>/app/javascript/packs"
     ],
     "moduleDirectories": [
