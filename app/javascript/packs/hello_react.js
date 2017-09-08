@@ -6,6 +6,7 @@ import ReactDOM from 'react-dom'
 import Hello from './Hello'
 
 // // document.addEventListener('DOMContentLoaded', () => {
+// Make sure the app is reloaded when turbolinks loads the page
 document.addEventListener('turbolinks:load', () => {
   const date = new Date()
 

@@ -6,8 +6,8 @@ import renderer from 'react-test-renderer';
 test('hello component', () => {
   // Render a hello with label in the document
   const hello = shallow(
-    <Hello name="brendan" time="2000 Aug 10" />
+    <Hello name="brendan" date="10 August 2000" />
   );
 
-  expect(hello.text()).toEqual('Hello brendan!');
+  expect(hello.text()).toEqual('Hello brendan at 10 August 2000!');
 });
