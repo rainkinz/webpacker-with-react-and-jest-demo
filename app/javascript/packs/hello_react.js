@@ -7,9 +7,15 @@ import Hello from './Hello'
 
 // // document.addEventListener('DOMContentLoaded', () => {
 document.addEventListener('turbolinks:load', () => {
-  console.log("rendering react")
-  ReactDOM.render(
-    <Hello name="Brendan" time={new Date().toString()} />,
-    document.body.appendChild(document.createElement('div')),
-  )
+  const date = new Date()
+
+  console.log(`rendering hello_react at: ${date}`)
+
+  const helloDiv = document.getElementById("hello_react");
+  if (helloDiv != null) {
+    ReactDOM.render(
+      <Hello name="Brendan" date={date.toString()} />,
+      helloDiv
+    )
+  }
 })

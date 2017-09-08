@@ -13,6 +13,26 @@ bin/yarn install
 rake db:create db:migrate
 ```
 
+## Running in Development
+
+Start the rails server
+```sh
+rails s
+```
+
+Start the webpack dev server:
+
+```sh
+bin/webpack-dev-server
+```
+
+*or* install [foreman](https://github.com/ddollar/foreman) and start the whole
+lot with:
+
+```sh
+foreman start
+```
+
 ## Testing
 
 ### Client Tests
