@@ -52,8 +52,3 @@ Alternatively, to have Jest re-run when files are changed, run:
 bin/yarn test -- --watch
 ```
 
-
-## TODO: Fill out the following?
-
-* Services (job queues, cache servers, search engines, etc.)
-* Deployment instructions
